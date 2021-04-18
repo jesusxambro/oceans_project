@@ -6,7 +6,7 @@ const bgImage = {uri: "https://trello-attachments.s3.amazonaws.com/607b0f73efae1
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.container}> 
       <ImageBackground source={bgImage} style={styles.imagebg}>
       </ImageBackground>
       <View style={styles.middle}>
@@ -19,6 +19,7 @@ export default function App() {
       <View />
     </View>
   );
+  
 }
 
 const styles = StyleSheet.create({
