@@ -1,17 +1,19 @@
-import { createStackNavigator, createAppContainer} from 'react-navigation-stack';
+import { createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from "react-navigation";
 
 import AboutScreen from '../screens/AboutScreen';
 import LearnScreen from '../screens/LearnScreen';
 import QuizScreen from '../screens/QuizScreen';
 import WatchScreen from '../screens/WatchScreen';
-import App from '../App';
+import HomeScreen from '../screens/HomeScreen';
 
-const MenuNavigator = createStackNavigator({
-    Categories: AboutScreen,
+const MainNavigator = createStackNavigator({
+    Categories: HomeScreen,
+    AboutScreen,
     LearnScreen,
     QuizScreen,
     WatchScreen,
-    App
+    HomeScreen
 });
 
-export default createAppContainer(MenuNavigator);
+export default createAppContainer(MainNavigator);
